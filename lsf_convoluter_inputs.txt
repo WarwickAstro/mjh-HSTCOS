@@ -1,0 +1,7 @@
+lsf_name = path/to/lsf.extension
+lifetime_pos = 3
+spec_name = path/to/spec.extension
+obs_name = path/to/obs.extension
+output_name = path/to/output.extension
+beta = v/c
+
