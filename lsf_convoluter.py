@@ -114,7 +114,7 @@ def getinput_file():
     """
     dic = {}
     try:
-        with open('lsf_conv_inputs.txt') as inp_file:
+        with open('lsf_convoluter_inputs.txt') as inp_file:
             inputs = inp_file.readlines()
         for line in inputs:
             # discard blank lines
