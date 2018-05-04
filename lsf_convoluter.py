@@ -156,7 +156,7 @@ def getspec_file(sname, dlim=''):
     
     Does not accomodate errors on synthetic spectra"""
     try:
-        spec_data = np.genfromtxt(sname, delimiter=dlim, usecols=(0,1))
+        spec_data = np.genfromtxt(sname, delimiter=dlim, usecols=(0,1), comments='#')
     except OSError:
         print('File {} not found!\nExiting...'.format(sname))
         return OSError
@@ -175,7 +175,7 @@ def getobs_wavelengths(obsname):
 
 
 def main():
-    # arguements
+    # arguments
     try:
         cmdline = sys.argv[1]
     except IndexError:
@@ -249,7 +249,8 @@ def main():
         a.set_xlim(output_spec[:,0].min()*0.95, output_spec[:,0].max()*1.05)
         a.set_ylim(output_spec[:,1].min()*0.95, output_spec[:,1].max()*1.05)
         f.legend()
-        f.show()
+        print("Displaying plot of convolved spectrum.\nProgram will continue when plot window is closed.")
+        plt.show()
     
     try:
         if INPUT_DICT['output_name']:
