@@ -21,7 +21,7 @@ Currently tested for FUV G130M grating (although this should generalise) in life
 Support for lifetime position 1 files to be added.
 
 #### Dependancies: #####
-numpy, matplotlib, astropy, scipy
+numpy, matplotlib, scipy
 
 #### File Requirements: ####
 * LSF file
