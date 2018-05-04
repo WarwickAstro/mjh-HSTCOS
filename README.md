@@ -32,7 +32,7 @@ Program currently reads input variables from a file in the pwd called `lsf_convo
 The file should be formatted as lines of `variable_name = variable`.
 
 The following inputs are recognised:
-* `lsf_name = path/to/lsf.extension` (REQUIRED)
+* `lsf_name = path/to/lsf.extension` (REQUIRED, preamble should be commented with #)
 * `lifetime_pos = 3)` (REQUIRED)
 * `spec_name = path/to/spec.extension` (REQUIRED)
 * `obs_name = path/to/obs.extension` (REQUIRED)
