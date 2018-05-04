@@ -1,7 +1,6 @@
 import numpy as np
 import sys
 import matplotlib.pyplot as plt
-from astropy.modeling import models
 from scipy import interpolate
 
 """
